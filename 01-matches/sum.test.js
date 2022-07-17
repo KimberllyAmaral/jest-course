@@ -58,6 +58,8 @@ function compileAndroidCode() {
 
 describe("expections", () => {
     it("compiling android goes as expected", () => {
-        expect(() => compileAndroidCode()).toThrow(Error)
+        expect(() => compileAndroidCode()).toThrow(
+            "you are using the wrong JDK"
+        )
     })
 })
